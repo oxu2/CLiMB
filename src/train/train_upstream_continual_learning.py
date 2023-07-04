@@ -58,7 +58,7 @@ def main():
                                                                             'freeze_encoder',
                                                                             'freeze_bottom_k_layers'],
                         help="Name of Continual Learning algorithm used.")
-    parser.add_argument("--climb_data_dir", type=str, required=True, default='/data/datasets/MCL/',
+    parser.add_argument("--climb_data_dir", type=str, required=True, default='/people/cs/o/oxx220000/data/',
                         help="Directory where all the MCL data is stored")
     parser.add_argument("--do_train", action='store_true',
                         help="If True, train the model on these tasks")

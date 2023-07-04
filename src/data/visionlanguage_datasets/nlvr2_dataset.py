@@ -200,7 +200,7 @@ if __name__ == '__main__':
             self.visual_input_type = 'pil-image'
     
     args = Args()
-    data_dir          = '/data/datasets/MCL/nlvr2/'
+    data_dir          = '/people/cs/o/oxx220000/data/nlvr2/'
     split             = 'val' #'train' 
     
     from transformers import BertTokenizer

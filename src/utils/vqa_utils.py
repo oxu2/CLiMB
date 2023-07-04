@@ -53,4 +53,4 @@ def target_tensor(num_labels, labels, scores):
     return target
 
 if __name__ == '__main__':
-    create_vqa_labels('/data/datasets/MCL/vqav2/')
+    create_vqa_labels('/people/cs/o/oxx220000/data/vqav2/')

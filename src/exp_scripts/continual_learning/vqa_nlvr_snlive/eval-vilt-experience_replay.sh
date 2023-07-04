@@ -7,8 +7,8 @@ python -m train.train_upstream_continual_learning --encoder_name vilt \
 			--memory_percentage 0.01 \
 			--memory_sampling_strategy random \
 			--replay_frequency 100 \
-                        --climb_data_dir /data/datasets/MCL/ \
+                        --climb_data_dir /people/cs/o/oxx220000/data/ \
                         --do_eval \
-                        --output_dir /data/experiments/MCL/ \
+                        --output_dir /people/cs/o/oxx220000/CLiMB/experiments/ \
                         --do_wandb_logging \
                         --batch_size 64

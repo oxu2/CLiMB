@@ -5,16 +5,16 @@ nshot_arr=(16 32)
 subseed_arr=(10)
 ckpt_arr=(
     "dandelin/vilt-b32-mlm" \
-    "/data/experiments/MCL/vilt-singletask_ft-task0_vqa/checkpoints/task0_vqa/encoder" \
-    "/data/experiments/MCL/vilt-sequential_ft-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task1_nlvr2/encoder" \
-    "/data/experiments/MCL/vilt-sequential_ft-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task2_snli-ve/encoder" \
-    "/data/experiments/MCL/vilt-experience_replay-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task1_nlvr2/encoder" \
-    "/data/experiments/MCL/vilt-experience_replay-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task2_snli-ve/encoder" \
-    "/data/experiments/MCL/vilt-freeze_bottom9layers-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task0_vqa/encoder" \
-    "/data/experiments/MCL/vilt-freeze_bottom9layers-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task1_nlvr2/encoder" \
-    "/data/experiments/MCL/vilt-freeze_bottom9layers-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task2_snli-ve/encoder" \
-    "/data/experiments/MCL/vilt-ewc-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task1_nlvr2/encoder" \
-    "/data/experiments/MCL/vilt-ewc-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task2_snli-ve/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-singletask_ft-task0_vqa/checkpoints/task0_vqa/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-sequential_ft-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task1_nlvr2/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-sequential_ft-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task2_snli-ve/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-experience_replay-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task1_nlvr2/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-experience_replay-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task2_snli-ve/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-freeze_bottom9layers-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task0_vqa/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-freeze_bottom9layers-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task1_nlvr2/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-freeze_bottom9layers-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task2_snli-ve/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-ewc-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task1_nlvr2/encoder" \
+    "/people/cs/o/oxx220000/CLiMB/experiments/vilt-ewc-task0_vqa-task1_nlvr2-task2_snli-ve-task3_vcr/checkpoints/task2_snli-ve/encoder" \
     )
 
 for t in ${task_arr[@]}
@@ -29,7 +29,7 @@ do
                 python -m train.train_vision --encoder_name vilt \
                                         --checkpoint_name $c \
                                         --task_name $t \
-                                        --output_dir /data/experiments/MCL/vision_only \
+                                        --output_dir /people/cs/o/oxx220000/CLiMB/experiments/vision_only \
                                         --batch_size 32 \
                                         --model_catog vilt-v-cls \
                                         --num_shot $n \

@@ -72,7 +72,7 @@ def save_imgs(image, fn, n=4):
 
 if __name__ == '__main__':
 
-    dataset = MSCOCOImagesDataset('/data/datasets/MCL/ms-coco/')
+    dataset = MSCOCOImagesDataset('/people/cs/o/oxx220000/data/ms-coco/')
     data_loader = data.DataLoader(dataset=dataset,
                               batch_size=2048,
                               shuffle=False,

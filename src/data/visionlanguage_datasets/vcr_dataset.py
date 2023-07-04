@@ -256,8 +256,8 @@ if __name__ == '__main__':
             self.visual_input_type = 'pil-image'
     
     args = Args()
-    data_dir          = '/data/datasets/MCL/vcr/'
-    #annotation_dir    = '/data/datasets/MCL/vcr/annotation/'
+    data_dir          = '/people/cs/o/oxx220000/data/vcr/'
+    #annotation_dir    = '/people/cs/o/oxx220000/data/vcr/annotation/'
     split             = 'val' #'train' 
     text    = ['Why', 'is', [0], 'smiling', 'at', [1], '?']
     objects = ['person', 'person', 'bottle']

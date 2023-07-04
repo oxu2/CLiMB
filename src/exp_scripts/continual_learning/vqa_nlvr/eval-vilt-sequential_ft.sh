@@ -5,6 +5,6 @@ python -m train.train_upstream_continual_learning --encoder_name vilt \
                         --ordered_cl_tasks vqa,nlvr2 \
                         --cl_algorithm sequential_ft \
 			--do_eval \
-                        --output_dir /data/experiments/MCL/ \
+                        --output_dir /people/cs/o/oxx220000/CLiMB/experiments/ \
                         --do_wandb_logging \
                         --batch_size 32

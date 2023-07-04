@@ -70,7 +70,7 @@ def main():
                                                                             'freeze_encoder',
                                                                             'freeze_bottom_k_layers'],
                         help="Name of Continual Learning algorithm used.")
-    parser.add_argument("--climb_data_dir", type=str, required=True, default='/data/datasets/MCL/',
+    parser.add_argument("--climb_data_dir", type=str, required=True, default='/people/cs/o/oxx220000/data/',
                         help="Directory where all the MCL data is stored")
 
     # Arguments specific to experience replay algorithm

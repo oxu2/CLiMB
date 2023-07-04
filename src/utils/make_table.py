@@ -57,14 +57,14 @@ if __name__ == "__main__":
 
     if task_name in ['coco', 'imagenet', 'inat2019', 'places365']:
         dir_name = 'vision_only'
-        fns = glob.glob(f"/data/experiments/MCL/{dir_name}/{task_name}_*")
+        fns = glob.glob(f"/people/cs/o/oxx220000/CLiMB/experiments/{dir_name}/{task_name}_*")
         all_scores = merge_all_results(all_scores, fns, 'ViLT')
     else:
         dir_name = 'lang_only'
 
-        fns = glob.glob(f"/data/experiments/MCL/{dir_name}/{task_name}_*")
+        fns = glob.glob(f"/people/cs/o/oxx220000/CLiMB/experiments/{dir_name}/{task_name}_*")
         all_scores = merge_all_results(all_scores, fns, 'ViLT')
-        fns = glob.glob(f"/data/experiments/MCL/{dir_name}/viltbert/{task_name}_*")
+        fns = glob.glob(f"/people/cs/o/oxx220000/CLiMB/experiments/{dir_name}/viltbert/{task_name}_*")
         all_scores = merge_all_results(all_scores, fns, 'ViLTBERT')
 
     dump_outputs(all_scores, task_name)

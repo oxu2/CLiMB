@@ -98,7 +98,7 @@ class MSCOCOImagesDataset(Dataset):
 
 if __name__ == '__main__':
 
-    dataset = MSCOCOImagesDataset('/data/datasets/MCL/ms-coco/', 'raw')
+    dataset = MSCOCOImagesDataset('/people/cs/o/oxx220000/data/ms-coco/', 'raw')
     imgid = dataset.imageids[0]
     x = dataset.get_image_data(imgid)
     print(x.shape)

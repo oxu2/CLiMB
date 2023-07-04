@@ -269,7 +269,7 @@ def build_vqa_dataloader(args,
     return dataloader
 
 if __name__ == '__main__':
-    data_dir = '/data/datasets/MCL/vqav2/'
+    data_dir = '/people/cs/o/oxx220000/data/vqav2/'
     #dataset = VQADataset(data_dir, None, 'train', None)
     class Args:
         def __init__(self):
@@ -282,7 +282,7 @@ if __name__ == '__main__':
     from transformers import BertTokenizer
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
-    images_dataset = MSCOCOImagesDataset('/data/datasets/MCL/ms-coco/', args.visual_input_type)
+    images_dataset = MSCOCOImagesDataset('/people/cs/o/oxx220000/data/ms-coco/', args.visual_input_type)
     vqa_dataloader = build_vqa_dataloader(args, data_dir, images_dataset, 'val', args.visual_input_type, tokenizer=tokenizer)
 
     for batch in vqa_dataloader:

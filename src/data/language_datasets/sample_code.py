@@ -14,19 +14,19 @@ from data.language_datasets.text_dataset import *
 if __name__ == '__main__':
     tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 
-    cache_dir = "/data/datasets/MCL/cached_datasets"
+    cache_dir = "/people/cs/o/oxx220000/data/cached_datasets"
     dataloader = get_data_loader(tokenizer, task_name='sst2', split='train', max_len=100, batch_size=128, cache_dir=cache_dir) 
     logger.info(str(len(dataloader.dataset)))
     dataloader = get_data_loader(tokenizer, task_name='imdb', split='train', max_len=100, batch_size=128, cache_dir=cache_dir) 
     logger.info(str(len(dataloader.dataset)))
     dataloader = get_data_loader(tokenizer, task_name='hellaswag', split='test', max_len=100, batch_size=128, 
-        cache_dir=cache_dir, data_dir='/data/datasets/MCL/hellaswag') 
+        cache_dir=cache_dir, data_dir='/people/cs/o/oxx220000/data/hellaswag') 
     logger.info(str(len(dataloader.dataset)))
     dataloader = get_data_loader(tokenizer, task_name='piqa', split='train', max_len=100, batch_size=128, 
-        cache_dir=cache_dir, data_dir='/data/datasets/MCL/piqa') 
+        cache_dir=cache_dir, data_dir='/people/cs/o/oxx220000/data/piqa') 
     logger.info(str(len(dataloader.dataset)))
     dataloader = get_data_loader(tokenizer, task_name='cosmosqa', split='test', max_len=150, batch_size=128, 
-        cache_dir=cache_dir, data_dir='/data/datasets/MCL/cosmosqa') 
+        cache_dir=cache_dir, data_dir='/people/cs/o/oxx220000/data/cosmosqa') 
     logger.info(str(len(dataloader.dataset)))
 
     for batch in dataloader:

@@ -129,7 +129,7 @@ sst2_config = {
 
 hellaswag_config = {
         'task_name': 'hellaswag',
-        'data_dir': '/data/datasets/MCL/hellaswag',
+        'data_dir': '/people/cs/o/oxx220000/data/hellaswag',
         'max_len': 120,
         'num_labels': 4,
         'model_type': 'classification',
@@ -143,7 +143,7 @@ hellaswag_config = {
 
 commonsenseqa_config = {
         'task_name': 'commonsenseqa',
-        'data_dir': '/data/datasets/MCL/commonsenseqa',
+        'data_dir': '/people/cs/o/oxx220000/data/commonsenseqa',
         'max_len': 80,
         'num_labels': 5,
         'model_type': 'classification',
@@ -157,7 +157,7 @@ commonsenseqa_config = {
 
 piqa_config = {
         'task_name': 'piqa',
-        'data_dir': '/data/datasets/MCL/piqa',
+        'data_dir': '/people/cs/o/oxx220000/data/piqa',
         'max_len': 80,
         'num_labels': 2,
         'model_type': 'classification',
@@ -171,7 +171,7 @@ piqa_config = {
 
 imagenet_config = {
         'task_name': 'imagenet',
-        'data_dir': '/data/datasets/MCL/ILSVRC2012',
+        'data_dir': '/people/cs/o/oxx220000/data/ILSVRC2012',
         'num_labels': 1000,
         'model_type': 'classification',
         'num_epochs': 8,
@@ -184,7 +184,7 @@ imagenet_config = {
 
 places365_config = {
         'task_name': 'places365',
-        'data_dir': '/data/datasets/MCL/Places365',
+        'data_dir': '/people/cs/o/oxx220000/data/Places365',
         'num_labels': 365,
         'model_type': 'classification',
         'num_epochs': 10,
@@ -197,7 +197,7 @@ places365_config = {
 
 inat2019_config = {
         'task_name': 'inat2019',
-        'data_dir': '/data/datasets/MCL/iNat2019',
+        'data_dir': '/people/cs/o/oxx220000/data/iNat2019',
         'num_labels': 1010,
         'model_type': 'classification',
         'num_epochs': 8,
@@ -209,7 +209,7 @@ inat2019_config = {
 
 coco_cls_config = {
         'task_name': 'coco',
-        'data_dir': '/data/datasets/MCL/ms-coco',
+        'data_dir': '/people/cs/o/oxx220000/data/ms-coco',
         'num_labels': 80,
         'model_type': 'classification',
         'num_epochs': 10,

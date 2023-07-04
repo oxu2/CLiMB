@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGES_DIR='/data/datasets/MCL/nlvr2/tmp/'
+IMAGES_DIR='/people/cs/o/oxx220000/data/nlvr2/tmp/'
 
 unzip -q ${IMAGES_DIR}/dev_img.zip -d ${IMAGES_DIR}/
 rm ${IMAGES_DIR}/dev_img.zip 

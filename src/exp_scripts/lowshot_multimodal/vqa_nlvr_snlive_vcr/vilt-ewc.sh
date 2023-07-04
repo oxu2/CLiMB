@@ -6,6 +6,6 @@ python -m train.train_lowshot_multimodal --encoder_name vilt \
                         --cl_algorithm ewc \
                         --ewc_fisher_sample_percentage 0.01 \
 			--ewc_loss_weight 100.0 \
-			--climb_data_dir /data/datasets/MCL/ \
-                        --output_dir /data/experiments/MCL/ \
+			--climb_data_dir /people/cs/o/oxx220000/data/ \
+                        --output_dir /people/cs/o/oxx220000/CLiMB/experiments/ \
                         --batch_size 64

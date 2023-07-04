@@ -97,7 +97,7 @@ class Flickr30KImagesDataset(Dataset):
 
 if __name__ == '__main__':
 
-    dataset = Flickr30KImagesDataset('/data/datasets/MCL/flickr30k/', 'raw')
+    dataset = Flickr30KImagesDataset('/people/cs/o/oxx220000/data/flickr30k/', 'raw')
     imgid = dataset.imageids[0]
     x = dataset.get_image_data(imgid)
     print(x.shape)

@@ -227,7 +227,7 @@ def build_snli_ve_dataloader(args,
     return dataloader
 
 if __name__ == '__main__':
-    data_dir = '/data/datasets/MCL/snli-ve/'
+    data_dir = '/people/cs/o/oxx220000/data/snli-ve/'
     class Args:
         def __init__(self):
             self.batch_size = 4
@@ -236,7 +236,7 @@ if __name__ == '__main__':
             self.visual_input_type = 'pil-image'
     args = Args()
 
-    images_dataset = Flickr30KImagesDataset('/data/datasets/MCL/flickr30k/', args.visual_input_type)
+    images_dataset = Flickr30KImagesDataset('/people/cs/o/oxx220000/data/flickr30k/', args.visual_input_type)
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
     snli_ve_dataloader = build_snli_ve_dataloader(args, data_dir, images_dataset, 'train', args.visual_input_type, tokenizer=tokenizer)
 
